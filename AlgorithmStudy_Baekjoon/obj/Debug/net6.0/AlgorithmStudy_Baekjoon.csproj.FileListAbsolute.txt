@@ -1,0 +1,15 @@
+C:\Users\otata\source\repos\AlgorithmStudy_Baekjoon\AlgorithmStudy_Baekjoon\bin\Debug\net6.0\AlgorithmStudy_Baekjoon.exe
+C:\Users\otata\source\repos\AlgorithmStudy_Baekjoon\AlgorithmStudy_Baekjoon\bin\Debug\net6.0\AlgorithmStudy_Baekjoon.deps.json
+C:\Users\otata\source\repos\AlgorithmStudy_Baekjoon\AlgorithmStudy_Baekjoon\bin\Debug\net6.0\AlgorithmStudy_Baekjoon.runtimeconfig.json
+C:\Users\otata\source\repos\AlgorithmStudy_Baekjoon\AlgorithmStudy_Baekjoon\bin\Debug\net6.0\AlgorithmStudy_Baekjoon.dll
+C:\Users\otata\source\repos\AlgorithmStudy_Baekjoon\AlgorithmStudy_Baekjoon\bin\Debug\net6.0\AlgorithmStudy_Baekjoon.pdb
+C:\Users\otata\source\repos\AlgorithmStudy_Baekjoon\AlgorithmStudy_Baekjoon\obj\Debug\net6.0\AlgorithmStudy_Baekjoon.csproj.AssemblyReference.cache
+C:\Users\otata\source\repos\AlgorithmStudy_Baekjoon\AlgorithmStudy_Baekjoon\obj\Debug\net6.0\AlgorithmStudy_Baekjoon.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\otata\source\repos\AlgorithmStudy_Baekjoon\AlgorithmStudy_Baekjoon\obj\Debug\net6.0\AlgorithmStudy_Baekjoon.AssemblyInfoInputs.cache
+C:\Users\otata\source\repos\AlgorithmStudy_Baekjoon\AlgorithmStudy_Baekjoon\obj\Debug\net6.0\AlgorithmStudy_Baekjoon.AssemblyInfo.cs
+C:\Users\otata\source\repos\AlgorithmStudy_Baekjoon\AlgorithmStudy_Baekjoon\obj\Debug\net6.0\AlgorithmStudy_Baekjoon.csproj.CoreCompileInputs.cache
+C:\Users\otata\source\repos\AlgorithmStudy_Baekjoon\AlgorithmStudy_Baekjoon\obj\Debug\net6.0\AlgorithmStudy_Baekjoon.dll
+C:\Users\otata\source\repos\AlgorithmStudy_Baekjoon\AlgorithmStudy_Baekjoon\obj\Debug\net6.0\refint\AlgorithmStudy_Baekjoon.dll
+C:\Users\otata\source\repos\AlgorithmStudy_Baekjoon\AlgorithmStudy_Baekjoon\obj\Debug\net6.0\AlgorithmStudy_Baekjoon.pdb
+C:\Users\otata\source\repos\AlgorithmStudy_Baekjoon\AlgorithmStudy_Baekjoon\obj\Debug\net6.0\AlgorithmStudy_Baekjoon.genruntimeconfig.cache
+C:\Users\otata\source\repos\AlgorithmStudy_Baekjoon\AlgorithmStudy_Baekjoon\obj\Debug\net6.0\ref\AlgorithmStudy_Baekjoon.dll
