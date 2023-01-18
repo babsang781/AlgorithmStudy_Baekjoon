@@ -9,7 +9,6 @@ namespace backjoon
 {
     class Program
     {
-
         static void Main(string[] args)
         {
             StringBuilder stringBuilder = new StringBuilder();
