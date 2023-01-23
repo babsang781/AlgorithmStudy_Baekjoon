@@ -1,37 +1,78 @@
-﻿// See https://aka.ms/new-console-template for more information
-using AlgorithmStudy_Baekjoon;
-
-
-using System;
+﻿using System;
+using System.Linq;
 using System.Text;
+using System.Collections;
 
-namespace backjoon
+public class Program
 {
-    class Program
+    public static void Main()
     {
-        static void Main(string[] args)
+        StringBuilder stringBuilder = new StringBuilder();
+        Stack stack = new Stack();
+
+        while (true)
         {
-            StringBuilder stringBuilder = new StringBuilder();
-            int t = int.Parse(Console.ReadLine());
+            string line = Console.ReadLine().ToString();
 
-            for (int i = 0; i < t; ++i)
+            char[] lines = line.ToCharArray();
+
+            if (line == ".")
             {
-                string[] q = Console.ReadLine().Split();
-                int h = int.Parse(q[0]);
-                int w = int.Parse(q[1]);
-                int n = int.Parse(q[2]);
-                stringBuilder.AppendLine(
-                    ((n % h == 0 ? h : n % h) * 100 + 
-                    (n%h == 0 ? n/h : n/h+1)
-                    ).ToString());
+                break;
             }
-            Console.WriteLine(stringBuilder);
 
+            for (int i = 0; i < lines.Count(); i++)
+            {
+                // stack push 조건문
+                if (lines[i] == '(')
+                {
+                    stack.Push(lines[i]);
+                }
+                else if (lines[i] == '[')
+                {
+                    stack.Push(lines[i]);
+                }
+                // stack pop 조건 및 "No" 조건 정리하기
+                else if (lines[i] == ')')
+                {
+                    if ( !stack.Contains('('))
+                    {
+                        stringBuilder.AppendLine("No");
+                        break;
+                    }else if((char)stack.Peek() != '(')
+                    {
+                        stringBuilder.AppendLine("No");
+                        break;
+                    }
+                    else
+                    {
+                        stack.Pop();
+                    }
+                }
+                else if (lines[i] == ']')
+                {
+                    if (!stack.Contains('['))
+                    {
+                        stringBuilder.AppendLine("No");
+                        break;
+                    }
+                    else if ((char)stack.Peek() != '[')
+                    {
+                        stringBuilder.AppendLine("No");
+                        break;
+                    }
+                    else
+                    {
+                        stack.Pop();
+                    }
+                }
 
+                if(i == (lines.Count() - 1) && stack.Count == 0) stringBuilder.AppendLine("Yes");
+            }
+
+            stack.Clear();
         }
-        
+
+        Console.WriteLine(stringBuilder);
     }
 }
-
-
-
