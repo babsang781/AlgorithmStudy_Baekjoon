@@ -1,12 +1,13 @@
 using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
-namespace backjoon
+namespace AlgorithmStudy_Baekjoon
 {
-    class Program
+    public class AMC_Hotel
     {
-
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             StringBuilder stringBuilder = new StringBuilder();
             int t = int.Parse(Console.ReadLine());
@@ -18,14 +19,11 @@ namespace backjoon
                 int w = int.Parse(q[1]);
                 int n = int.Parse(q[2]);
                 stringBuilder.AppendLine(
-                    ((n % h == 0 ? h : n % h) * 100 + 
-                    (n%h == 0 ? n/h : n/h+1)
+                    ((n % h == 0 ? h : n % h) * 100 +
+                    (n % h == 0 ? n / h : n / h + 1)
                     ).ToString());
             }
             Console.WriteLine(stringBuilder);
-
-
         }
-        
     }
 }
