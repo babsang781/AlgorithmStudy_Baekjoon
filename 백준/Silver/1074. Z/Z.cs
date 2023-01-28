@@ -1,0 +1,50 @@
+using System;
+using System.Text;
+
+public class Program
+{
+    public static void Main()
+    {
+        StringBuilder stringBuilder = new StringBuilder();
+
+        string[] quiz = Console.ReadLine().Split();
+        int N = int.Parse(quiz[0]);
+        int r = int.Parse(quiz[1]);
+        int c = int.Parse(quiz[2]);
+        long result = 0;
+        int count = 0;
+
+        // r 은 2 의 n 승 보다 값보다 하나 작은 값을 기준으로 2n+1승 + 나머지 값 + 나머지 값의 재귀적 계산을 한다.
+        // 내 생각에는 r을 2로 나눈 값을 다시 2로 나누는 방법을 반복하여 2의 몇 승 더하기 몇 승 으로 나누고 하면 될 것 같은데 
+
+        string rBin = Convert.ToString(r, 2);
+        char[] rCharArray = rBin.ToCharArray();
+        Array.Reverse(rCharArray);
+
+        string cBin = Convert.ToString(c, 2);
+        char[] cCharArray = cBin.ToCharArray();
+        Array.Reverse(cCharArray);
+
+        for (int i = 0; i < rCharArray.Length; i++)
+        {
+            if (rCharArray[i] == '1')
+            {
+                result += (long)Math.Pow(2, 2 * count + 1);
+            }
+            count++;
+        }
+        count = 0;
+
+        for (int i = 0; i < cCharArray.Length; i++)
+        {
+            if (cCharArray[i] == '1')
+            {
+                result += (long)Math.Pow(2, 2 * count);
+            }
+            count++;
+        }
+
+
+        Console.WriteLine(result);
+    }
+}
